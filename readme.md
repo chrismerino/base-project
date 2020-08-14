@@ -44,11 +44,11 @@ Override the content in `.eslint.json` and include the following:
 
 ```
 {
- "extends": ["airbnb", "prettier"],
- "plugins": ["prettier"],
- "rules": {
-	"prettier/prettier": "error",
-	"no-unused-vars": "warn"
-	}
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "no-unused-vars": "warn"
+  }
 }
 ```
